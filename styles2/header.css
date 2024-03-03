@@ -1,0 +1,160 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style:solid ;
+border-bottom-color: rgb(228,228,228);
+}
+.leftsec{
+  display: flex;
+  align-items: center;
+}
+.medsec{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left:70px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+.rightsec{
+  display : flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.ham{
+  margin-left: 20px;
+  margin-right: 24px;
+  height: 24px;
+}
+.youlogo{
+height: 20px;
+}
+.searchbutton{
+  height: 39px;
+  width: 66px;
+  background-color: rgb(240,240,240);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(192 ,192 ,192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.searchbutton:hover{
+  background-color: rgb(225, 223, 223);
+}
+.searchbutton:active{
+opacity: 0.5;
+}
+.voice{
+height:40px;
+width:40px;
+border-radius: 20px;
+border:none;
+background-color: rgb(245,245,245);
+}
+.search{
+  flex: 1;
+  padding-left: 10px;
+  height: 36px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: rgb(192 ,192 ,192);
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0 , 0 ,0, 0.05);
+  width: 0;
+} 
+.search::placeholder{
+  font-family: Roboto , Arial;
+  font-size:16px;
+}
+.searchicon{
+  height: 25px;
+}
+.voiceicon{
+  height: 24px;
+}
+.uploadicon{
+  height: 24px;
+}
+.youappsicon{
+  height:24px
+}
+.notiicons{
+  height: 24px;
+
+}
+.notofications-container{
+  position:relative;
+}
+.noti-count{
+  position:absolute;
+  top:-2px;
+  right:-4px;
+  background-color: rgb(200 ,0,0);
+  color: white;
+  font-family: Roboto , Arial;
+  font-size:11px;
+  padding-left:5px;
+  padding-right:5px;
+ padding-top:2px;
+ padding-bottom:2px;
+border-radius: 10px;
+}
+.curuserpic{
+  height:32px;
+  border-radius: 16px;
+}
+
+.searchbutton ,
+ .voice ,
+ .upload-icon-container ,
+ .apps-container
+ .noti-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+.searchbutton .tooltip 
+, .voice .tooltip
+, .upload-icon-container .tooltip
+, .apps-container .tooltip 
+, .noti-container .tooltip{
+  position:absolute;
+  font-family: Roboto , Arial;
+  background-color: grey;
+  color:white;
+  padding-top: 4px;
+  padding-bottom:4px;
+  padding-left:8px;
+  padding-right:8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom:-30px;
+  opacity: 0;
+  transition: opacity 0.15s ;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.searchbutton:hover .tooltip , 
+.voice:hover .tooltip
+, .upload-icon-container:hover .tooltip
+, .apps-container:hover .tooltip 
+, .noti-container:hover .tooltip
+{
+  opacity: 1;
+}
